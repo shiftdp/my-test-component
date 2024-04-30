@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: my-test-component
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/adr-location: docs/adrs
+    github.com/project-slug: shiftdp/my-test-component
+  links:
+    - url: 'https://google.com'
+      title: 'my-test-component Link'
+      # icon: ''
+      # type: ''
+spec:
+  system: system:default/my-application
+  type: service
+  owner: group:default/my-team
+  lifecycle: experimental
+  project: goreply-playground-idp
